@@ -1,3 +1,36 @@
+# Creating a Reusable Function.
+
+# this code is what I'm going to make a reusable function out of 
+message = input("=>")
+words = message. split(' ')
+emojis = {
+    ":)": "🙂",
+    ":(": "☹️"
+}
+output = ""
+for word in words:
+    output += emojis.get(word, word) + " "
+
+print(output)
+
+# my reusable function
+def emoji_converter (message):
+    words = message. split(' ')
+    emojis = {
+        ":)": "🙂",
+        ":(": "☹️"
+    }
+    output = ""
+    for word in words:
+        output += emojis.get(word, word) + " "
+    return output
+
+message = input(">")
+#emoji_converter(message) # want to make this code shoter
+print(emoji_converter(message))
+
+
+'''
 #learning about Return Statements.
 def square(number):
     return number * number
@@ -8,7 +41,7 @@ def square(number):
 print(square(3))
 
 
-'''
+
 #learning About Keyword and Positional Arguments.
 def greet_user(first_name, last_name):
     print(f'Hi {first_name} {last_name}!')
