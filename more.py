@@ -1,3 +1,37 @@
+#Learning about constructors
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+
+point = Point(10, 20)
+point.x = 11
+print(point.x)
+
+#Practice creating a class for a person.
+class Person:
+    def __init__(self, name):
+        self.name = name
+        
+    def talk(self):
+        print(f"Hi, I am {self.name}")
+
+seiku = Person("Seiku Sillah")
+#print(seiku.name)
+seiku.talk()
+
+beyage = Person("Beyage Sillah")
+beyage.talk()
+
+
+'''
 #Learning About Classes
 class Point:
     def move(self):
@@ -21,7 +55,7 @@ print(point2.x)
 # I'm very familiar with comments so i didnot take any notes or write code on them.
 
 
-'''
+
 #learning Exceptions
 try:
     age = int(input('Age: '))
