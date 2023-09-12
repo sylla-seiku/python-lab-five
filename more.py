@@ -1,3 +1,27 @@
+#Learing Inheritance 
+class Mammal:
+     def walk(self):
+        print("walk")
+
+
+class Cat(Mammal):
+    def be_annoying(self):
+        print("annoying")
+   
+
+class Dog(Mammal):
+    def bark(self):
+        print("bark")
+
+
+dog1 = Dog()
+dog1.bark()
+
+cat1 = Cat()
+cat1.be_annoying()
+
+
+'''
 #Learning about constructors
 class Point:
     def __init__(self, x, y):
@@ -31,7 +55,7 @@ beyage = Person("Beyage Sillah")
 beyage.talk()
 
 
-'''
+
 #Learning About Classes
 class Point:
     def move(self):
